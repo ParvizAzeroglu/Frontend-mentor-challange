@@ -1,0 +1,99 @@
+.container {
+  width: 100vw;
+  height: 100vh;
+  background-color: var(--light-blue);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.contentContainer {
+  width: 60%;
+  height: 100%;
+
+  padding: 2.3rem;
+}
+
+.button {
+  background-color: var(--light-blue);
+  border: none;
+  padding: 10px;
+  border-radius: 25px;
+
+  &:hover {
+    cursor: pointer;
+  }
+}
+
+.cardContainer {
+  width: 750px;
+  height: 300px;
+  background-color: white;
+  border-radius: 10px;
+
+  display: flex;
+  box-shadow: 13px 9px 34px -33px rgba(0, 0, 0, 0.46);
+  -webkit-box-shadow: 13px 9px 34px -33px rgba(0, 0, 0, 0.46);
+  -moz-box-shadow: 13px 9px 34px -33px rgba(0, 0, 0, 0.46);
+}
+
+.imageContainer {
+  height: 100%;
+  width: 40%;
+  overflow: hidden;
+
+  img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: left;
+  }
+}
+
+.shareContainer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 30px;
+  position: relative;
+
+  div {
+    display: flex;
+    img {
+      border-radius: 25px;
+    }
+    div {
+      margin-left: 20px;
+      display: flex;
+      align-items: center;
+      flex-direction: column;
+    }
+  }
+}
+
+.tooltipContainer {
+  position: absolute;
+  right: -75px;
+  top: -60px;
+  background-color: var(--very-dark-blue);
+  width: 200px;
+  height: 50px;
+  border-radius: 10px;
+}
+
+.arrowDown {
+  position: absolute;
+  border-width: 10px;
+  border-style: solid;
+  border-color: var(--very-dark-blue) transparent transparent transparent;
+  bottom: -18px;
+  left: 75px;
+}
+
+@media screen and (max-width: 700px) {
+  .cardContainer {
+    max-width: 340px;
+    max-height: 700px;
+    margin: 10px;
+  }
+}
