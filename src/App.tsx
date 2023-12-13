@@ -38,7 +38,7 @@ const Share: React.FC<ToolTipProps> = ({
     <div className={styles.shareContainer}>
       <div>
         <img
-          src="../images/avatar-michelle.jpg"
+          src="./images/avatar-michelle.jpg"
           alt="Avatar images"
           width="25px"
           height="25px"
@@ -50,7 +50,7 @@ const Share: React.FC<ToolTipProps> = ({
       </div>
 
       <button className={styles.button} onClick={handleClick}>
-        <img src="../images/icon-share.svg" alt="" />
+        <img src="./images/icon-share.svg" alt="" />
       </button>
       {isTooltipVisible && <ToolTip />}
     </div>
@@ -78,21 +78,21 @@ const ToolTip: React.FC = () => {
     <div className={styles.tooltipContainer}>
       <p className={styles.tooltipText}>Share</p>
       <img
-        src="../images/icon-facebook.svg"
+        src="./images/icon-facebook.svg"
         alt="facebook images"
         width="25px"
         height="25px"
         className={styles.tooltipImage}
       />
       <img
-        src="../images/icon-pinterest.svg"
+        src="./images/icon-pinterest.svg"
         alt="pinterest images"
         width="25px"
         height="25px"
         className={styles.tooltipImage}
       />
       <img
-        src="../images/icon-twitter.svg"
+        src="./images/icon-twitter.svg"
         alt="twitter images"
         width="25px"
         height="25px"
@@ -122,7 +122,7 @@ interface CardProps {
 const Image: React.FC = () => {
   return (
     <div className={styles.imageContainer}>
-      <img src="../images/drawers.jpg" alt="drawer image" />
+      <img src="./images/drawers.jpg" alt="drawer image" />
     </div>
   );
 };
