@@ -5,12 +5,12 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  overflow: hidden;
 }
 
 .contentContainer {
   width: 60%;
   height: 100%;
-
   padding: 2.3rem;
 }
 
@@ -107,6 +107,35 @@
   .cardContainer {
     max-width: 340px;
     max-height: 700px;
+    min-height: 600px;
     margin: 10px;
+    background-color: white;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .imageContainer {
+    width: 100%;
+    border-radius: 10px 10px 0px 0px;
+  }
+
+  .contentContainer {
+    width: 100%;
+    height: 60%;
+  }
+
+  .tooltipContainer {
+    top: 0px;
+    left: -36px;
+    width: 340px;
+  }
+
+  .arrowDown {
+    opacity: 0;
+  }
+
+  .button {
+    z-index: 50;
   }
 }

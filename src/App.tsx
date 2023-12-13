@@ -1,9 +1,22 @@
-import React, { ReactNode, useState } from "react";
+import React, { ReactNode, useEffect, useState } from "react";
 
 import styles from "./App.module.scss";
 
 const App: React.FC = () => {
   const [isTooltipVisible, setTooltipVisible] = useState<boolean>(false);
+  const [displaySize, setDisplaySize] = useState<number>(window.innerWidth);
+
+  useEffect(() => {
+    function handleSize(): void {
+      setDisplaySize(window.innerWidth);
+    }
+
+    window.addEventListener("resize", handleSize);
+
+    return () => {
+      window.removeEventListener("resize", handleSize);
+    };
+  }, []);
 
   return (
     <div className={styles.container}>
