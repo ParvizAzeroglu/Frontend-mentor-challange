@@ -5,6 +5,7 @@ import styles from "./App.module.scss";
 const App: React.FC = () => {
   const [isTooltipVisible, setTooltipVisible] = useState<boolean>(false);
   const [displaySize, setDisplaySize] = useState<number>(window.innerWidth);
+  console.log(displaySize);
 
   useEffect(() => {
     function handleSize(): void {
