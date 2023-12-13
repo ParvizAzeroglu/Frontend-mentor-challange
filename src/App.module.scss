@@ -41,6 +41,7 @@
   height: 100%;
   width: 40%;
   overflow: hidden;
+  border-radius: 10px 0px 0px 10px;
 
   img {
     width: 100%;
@@ -65,7 +66,7 @@
     div {
       margin-left: 20px;
       display: flex;
-      align-items: center;
+      align-items: left;
       flex-direction: column;
     }
   }
@@ -88,6 +89,18 @@
   border-color: var(--very-dark-blue) transparent transparent transparent;
   bottom: -18px;
   left: 75px;
+}
+
+.tooltipText {
+  text-transform: uppercase;
+  color: var(--blue);
+  letter-spacing: 5px;
+  padding: 15px;
+  font-size: 12px;
+}
+
+.tooltipImage {
+  margin: 10px 5px;
 }
 
 @media screen and (max-width: 700px) {

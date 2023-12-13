@@ -40,10 +40,10 @@ const Share: React.FC<ToolTipProps> = ({
         <img
           src="../images/avatar-michelle.jpg"
           alt="Avatar images"
-          width="45px"
-          height="45px"
+          width="25px"
+          height="25px"
         />
-        <div style={{ margin: auto, marginLeft: "10px" }}>
+        <div style={{ margin: "auto", marginLeft: "10px" }}>
           <h3 style={{ fontSize: "14px" }}>Michelle Appleton</h3>
           <p style={{ textAlign: "left", fontSize: "12px" }}>28 Jun 2020</p>
         </div>
@@ -76,6 +76,28 @@ const TextArea: React.FC = () => {
 const ToolTip: React.FC = () => {
   return (
     <div className={styles.tooltipContainer}>
+      <p className={styles.tooltipText}>Share</p>
+      <img
+        src="../images/icon-facebook.svg"
+        alt="facebook images"
+        width="25px"
+        height="25px"
+        className={styles.tooltipImage}
+      />
+      <img
+        src="../images/icon-pinterest.svg"
+        alt="pinterest images"
+        width="25px"
+        height="25px"
+        className={styles.tooltipImage}
+      />
+      <img
+        src="../images/icon-twitter.svg"
+        alt="twitter images"
+        width="25px"
+        height="25px"
+        className={styles.tooltipImage}
+      />
       <div className={styles.arrowDown}></div>
     </div>
   );
